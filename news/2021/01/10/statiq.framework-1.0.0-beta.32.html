@@ -1,0 +1,238 @@
+<!DOCTYPE html><html><head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicons/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicons/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicons/favicon-16x16.png">
+        <link rel="manifest" href="/assets/favicons/site.webmanifest">
+        <link rel="shortcut icon" type="image/png" href="/assets/favicons/favicon.ico">
+        <link rel="mask-icon" href="/assets/favicons/safari-pinned-tab.svg" color="#e9ecef">
+        <meta name="msapplication-config" content="/assets/favicons/browserconfig.xml">
+        <meta name="msapplication-TileColor" content="#e9ecef">
+        <meta name="theme-color" content="#e9ecef">
+
+        <link href="/assets/bootstrap/bootstrap.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&amp;family=Roboto+Slab:wght@400;700&amp;family=Roboto:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&amp;display=swap" rel="stylesheet" data-no-mirror="">
+        <link rel="stylesheet" href="/mirror/cdn.jsdelivr.net/npm/prismjs@1.19.0/themes/prism.css">
+        <link href="/assets/css/styles.css" rel="stylesheet">
+
+        <script src="/mirror/code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+        <script src="/mirror/cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+        <script src="/mirror/stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+        <script src="https://kit.fontawesome.com/a1cad7ed9a.js" crossorigin="anonymous" data-no-mirror=""></script>
+        <script src="/mirror/cdn.jsdelivr.net/npm/mermaid@8.4.8/dist/mermaid.min.js"></script>
+        <script src="/mirror/cdn.jsdelivr.net/npm/svg-pan-zoom@3.6.1/dist/svg-pan-zoom.min.js"></script>
+        <script src="/mirror/cdn.jsdelivr.net/npm/prismjs@1.19.0/components/prism-core.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/prismjs@1.19.0/plugins/autoloader/prism-autoloader.min.js" data-no-mirror=""></script>
+        <script src="/mirror/cdn.jsdelivr.net/npm/quicklink@2.0.0/dist/quicklink.umd.js"></script>
+        
+		
+
+        <title>Statiq - Statiq.Framework Release 1.0.0-beta.32</title>
+    </head>
+    <body class="d-flex flex-column">
+        <div class="flex-grow-1 d-flex flex-column">
+            <div class="bg-nav">
+                <div class="container-xl py-3">
+                    <div class="row">
+                        <div class="offset-lg-2 col-12 col-lg-8 px-0">
+                            <nav class="navbar navbar-expand-md navbar-light align-items-start">
+                                <a class="navbar-brand" href="/"><img id="logo" src="/assets/statiq.svg" alt="Statiq Framework"></a>
+                                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapse-topnav" aria-controls="collapse-topnav" aria-expanded="false" aria-label="Toggle navigation">
+                                    <span class="navbar-toggler-icon"></span>
+                                </button>
+                                <div id="collapse-topnav" class="collapse navbar-collapse flex-wrap">
+                                    <ul class="navbar-nav mr-auto">
+                                        <li id="nav-web" class="nav-item">
+                                            <a class="nav-link text-blue font-weight-light font-size-lg" href="/web">Web</a>
+                                        </li>
+                                        <li class="nav-item mx-3 border-right d-none d-md-block"></li>
+                                        <li id="nav-docs" class="nav-item">
+                                            <a class="nav-link text-orange font-weight-light font-size-lg" href="/docs">Docs</a>
+                                        </li>
+                                        <li class="nav-item mx-3 border-right d-none d-md-block"></li>
+                                        <li id="nav-framework" class="nav-item">
+                                            <a class="nav-link text-purple font-weight-light font-size-lg" href="/framework">Framework</a>
+                                        </li>
+                                    </ul>
+                                    <ul class="navbar-nav">
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="/news">News</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="https://github.com/statiqdev"><i class="fab fa-github"></i> GitHub</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="https://twitter.com/statiqdev"><i class="fab fa-twitter"></i> Twitter</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="https://github.com/statiqdev/Discussions/discussions"><i class="fad fa-question-circle"></i> Get Help</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link font-weight-bold text-red" href="/support"><i class="fad fa-heart icon-red"></i> Support</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="flex-grow-1 d-flex flex-column section-undefined section-news">
+                    <div id="titlebar" class="py-4">
+                        <div class="container-xl">
+                            <div class="row">
+                                <div class="offset-md-3 offset-lg-2 offset-lg-2 col-12 col-lg-8 px-3 px-lg-0 w-100 d-flex align-items-end">
+                                    <div class="flex-grow-1">
+                                        <div class="breadcrumbs text-uppercase d-flex flex-column flex-md-row">
+                                                <span><a href="/news">News</a></span>
+                                        </div>
+                                        <div class="text-white m-0 title">
+                                            Statiq.Framework Release 1.0.0-beta.32                                            
+                                        </div>
+
+        <div class="text-white-50">
+            Sunday, January 10, 2021 in
+            <a href="/news/topics/release"><span class="badge badge-dark">Release Notes</span></a>
+        </div>
+                                    </div>
+                                        <div class="navbar navbar-expand-md navbar-dark p-0">
+                                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapse-sidebar" aria-controls="collapse-sidebar" aria-expanded="false" aria-label="Toggle navigation">
+                                                <span class="navbar-toggler-icon"></span>
+                                            </button>
+                                        </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="undertitle">
+                        <div class="container-xl">                            
+                            <div class="row">
+                                    <div class="col-md-3 col-lg-2 bg-section">
+                                    </div>
+                                    <div class="col-md-9 col-lg-8 bg-white">
+                                    </div>
+                                <div class="col-lg-2 d-none d-lg-block bg-section">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                <div class="flex-grow-1 d-flex flex-column">
+                        <div class="container-xl flex-grow-1 d-flex flex-column">
+                            <div class="row flex-grow-1 align-items-stretch">
+                                        <div class="col-md-3 col-lg-2 bg-body">
+                                            <div id="collapse-sidebar" class="sidebar collapse px-0 px-md-3 pt-3">
+
+    <div class="sidebar-nav-item has-children">
+        <a href="/news/topics">Topics</a>
+    </div>
+    <div class="sidebar-nav-children">
+            <div class="sidebar-nav-item">
+                <a href="/news/topics/release">Release Notes</a>
+            </div>
+            <div class="sidebar-nav-item">
+                <a href="/news/topics/meta">Meta</a>
+            </div>
+    </div>
+                                            </div>
+                                        </div>
+                                        <div id="content" class="col-md-9 col-lg-8 p-4 pt-md-0 bg-white">
+                                            
+
+
+<ul>
+<li><strong>Breaking change:</strong> Refactored the <code>IExecutionContext.GetContentProviderAsync(string)</code> extension (and overloads) to be non-async and unified related extensions that get content providers.</li>
+<li><strong>Breaking change:</strong> Refactored <code>IDocument.CloseAsync(string)</code> and related extensions to be non-async and unified related clone methods into a single set of overloads.</li>
+<li><strong>Breaking change:</strong> Removed the <code>UseStringContentFiles</code> option because it's no longer relevant with the new string and stream processing.</li>
+<li>Updated the Razor engine from 3.0.0 to 3.1.10.</li>
+<li>Updated the Roslyn libraries from 3.4.0 to 3.8.0.</li>
+<li>Changed the precedence of environment variables to overwrite configuration from settings files to match expected ASP.NET Core conventions (#154).</li>
+<li>Fixed some bugs with the <code>ProcessLauncher</code> on Linux and Mac by ensuring the entire process tree is killed (#156).</li>
+<li>Added some performance caching for <code>IExecutionProcess.OutputPages</code>.</li>
+<li>Refactored <code>NormalizedPath</code> to reduce use of strings.</li>
+<li>Added some performance enhancements to caching of AngleSharp HTML documents.</li>
+</ul>
+
+
+                                        </div>
+                                <div class="col-lg-2 d-none d-lg-block bg-body pl-3 pt-3">
+                                </div>
+                            </div>
+                        </div>
+                </div>
+            </div>
+        </div>
+        <div id="footer" class="p-3 text-white">
+            <div class="container-xl">
+                <div class="row">
+                    <div class="offset-lg-2 col-12 col-lg-8">
+                        <div class="text-light text-center">
+                            <a href="/web" class="text-light pr-2 mr-1 border-right">Web</a>
+                            <a href="/docs" class="text-light pr-2 mr-1 border-right">Docs</a>
+                            <a href="/framework" class="text-light">Framework</a>
+                        </div>
+                        <div class="text-light text-center font-size-sm">
+                            <a href="/news" class="text-light pr-2 mr-1">News</a>
+                            <a href="https://github.com/statiqdev" class="text-light pr-2 mr-1"><i class="fab fa-github"></i> GitHub</a>
+                            <a href="https://twitter.com/statiqdev" class="text-light pr-2 mr-1"><i class="fab fa-twitter"></i> Twitter</a>
+                            <a class="text-light font-weight-bold" href="/support"><i class="fad fa-heart"></i> Support</a>
+                        </div>
+                        <div class="pt-2 font-size-sm text-muted text-center">
+                            © 2021 Statiq/Dave Glick
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script>
+            $(document).ready(function() {
+                quicklink.listen();
+                
+                mermaid.initialize(
+                {
+                    flowchart:
+                    {
+                        useMaxWidth: false
+                    },
+					startOnLoad: false,
+					cloneCssStyles: false
+                });     
+                mermaid.init(undefined, ".mermaid");
+
+                // Remove the max-width setting that Mermaid sets
+                var mermaidSvg = $('.mermaid svg');
+                mermaidSvg.addClass('img-fluid');
+                mermaidSvg.css('max-width', '');
+
+                // Make it scrollable
+				var target = document.querySelector(".mermaid svg");
+				if(target !== null)
+				{
+					var panZoom = window.panZoom = svgPanZoom(target, {
+						zoomEnabled: true,
+						controlIconsEnabled: true,
+						fit: true,
+						center: true,
+                        maxZoom: 20,
+                        zoomScaleSensitivity: 0.6
+					});			                          
+
+                    // Do the reset once right away to fit the diagram
+                    panZoom.resize();
+                    panZoom.fit();
+                    panZoom.center();
+                    
+                    $(window).resize(function(){
+                        panZoom.resize();
+                        panZoom.fit();
+                        panZoom.center();
+                    });
+				}
+            });
+        </script>
+        
+		
+    
+</body></html>

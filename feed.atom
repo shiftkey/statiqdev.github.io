@@ -3,8 +3,108 @@
 	<id>https://statiq.dev/</id>
 	<title />
 	<link rel="self" href="https://statiq.dev/" />
-	<rights>2020</rights>
-	<updated>2020-11-26T17:14:56Z</updated>
+	<rights>2021</rights>
+	<updated>2021-01-13T14:27:05Z</updated>
+	<entry>
+		<id>https://statiq.dev/news/2021/01/10/statiq.web-1.0.0-beta.18</id>
+		<title>Statiq.Web Release 1.0.0-beta.18</title>
+		<link href="https://statiq.dev/news/2021/01/10/statiq.web-1.0.0-beta.18" />
+		<updated>2021-01-10T16:51:26Z</updated>
+		<content>&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Breaking change:&lt;/strong&gt; Updated Statiq Framework to version &lt;a href="https://github.com/statiqdev/Statiq.Framework/releases/tag/v1.0.0-beta.32"&gt;1.0.0-beta.32&lt;/a&gt;,
+see the Statiq Framework release notes for details on breaking changes, mostly applicable to module authors.&lt;/li&gt;
+&lt;li&gt;Added a &lt;code&gt;ResetCache()&lt;/code&gt; method to the REPL to force a cache reset on the next execution (#936).&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+	</entry>
+	<entry>
+		<id>https://statiq.dev/news/2021/01/10/statiq.framework-1.0.0-beta.32</id>
+		<title>Statiq.Framework Release 1.0.0-beta.32</title>
+		<link href="https://statiq.dev/news/2021/01/10/statiq.framework-1.0.0-beta.32" />
+		<updated>2021-01-10T16:17:50Z</updated>
+		<content>&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Breaking change:&lt;/strong&gt; Refactored the &lt;code&gt;IExecutionContext.GetContentProviderAsync(string)&lt;/code&gt; extension (and overloads) to be non-async and unified related extensions that get content providers.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Breaking change:&lt;/strong&gt; Refactored &lt;code&gt;IDocument.CloseAsync(string)&lt;/code&gt; and related extensions to be non-async and unified related clone methods into a single set of overloads.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Breaking change:&lt;/strong&gt; Removed the &lt;code&gt;UseStringContentFiles&lt;/code&gt; option because it's no longer relevant with the new string and stream processing.&lt;/li&gt;
+&lt;li&gt;Updated the Razor engine from 3.0.0 to 3.1.10.&lt;/li&gt;
+&lt;li&gt;Updated the Roslyn libraries from 3.4.0 to 3.8.0.&lt;/li&gt;
+&lt;li&gt;Changed the precedence of environment variables to overwrite configuration from settings files to match expected ASP.NET Core conventions (#154).&lt;/li&gt;
+&lt;li&gt;Fixed some bugs with the &lt;code&gt;ProcessLauncher&lt;/code&gt; on Linux and Mac by ensuring the entire process tree is killed (#156).&lt;/li&gt;
+&lt;li&gt;Added some performance caching for &lt;code&gt;IExecutionProcess.OutputPages&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Refactored &lt;code&gt;NormalizedPath&lt;/code&gt; to reduce use of strings.&lt;/li&gt;
+&lt;li&gt;Added some performance enhancements to caching of AngleSharp HTML documents.&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+	</entry>
+	<entry>
+		<id>https://statiq.dev/news/2020/12/03/statiq.web-1.0.0-beta.17</id>
+		<title>Statiq.Web Release 1.0.0-beta.17</title>
+		<link href="https://statiq.dev/news/2020/12/03/statiq.web-1.0.0-beta.17" />
+		<updated>2020-12-03T02:55:42Z</updated>
+		<content>&lt;ul&gt;
+&lt;li&gt;Fixed a regression in how layouts are applied to Markdown files (#934).&lt;/li&gt;
+&lt;li&gt;Changed behavior introduced in 1.0.0-beta.16 regarding HTML files and layouts, now layouts are applied if the HTML file does not contain a &lt;code&gt;&amp;lt;html&amp;gt;&lt;/code&gt; tag, and are not applied if it does (#934).&lt;/li&gt;
+&lt;li&gt;Added a &lt;code&gt;SetDefaultLayoutTemplate()&lt;/code&gt; bootstrapper extension to change the layout engine applied to HTML fragments to an existing one (if the default of Razor is not wanted).&lt;/li&gt;
+&lt;li&gt;Added a &lt;code&gt;SetDefaultLayoutModule()&lt;/code&gt; bootstrapper extension to change the layout engine applied to HTML fragments to a new module (if the default of Razor is not wanted).&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+	</entry>
+	<entry>
+		<id>https://statiq.dev/news/2020/12/01/statiq.web-1.0.0-beta.16</id>
+		<title>Statiq.Web Release 1.0.0-beta.16</title>
+		<link href="https://statiq.dev/news/2020/12/01/statiq.web-1.0.0-beta.16" />
+		<updated>2020-12-01T22:12:04Z</updated>
+		<content>&lt;ul&gt;
+&lt;li&gt;Updated Statiq Framework to version &lt;a href="https://github.com/statiqdev/Statiq.Framework/releases/tag/v1.0.0-beta.31"&gt;1.0.0-beta.31&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Breaking change:&lt;/strong&gt; By default &lt;code&gt;.html&lt;/code&gt; files are no longer processed by a layout engine like Razor, instead use &lt;code&gt;.fhtml&lt;/code&gt; (HTML fragment) to indicate the file should be processed (#933).&lt;/li&gt;
+&lt;li&gt;Added a short wait to the file watcher to avoid file lock exceptions under certain conditions.&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+	</entry>
+	<entry>
+		<id>https://statiq.dev/news/2020/12/01/statiq.framework-1.0.0-beta.31</id>
+		<title>Statiq.Framework Release 1.0.0-beta.31</title>
+		<link href="https://statiq.dev/news/2020/12/01/statiq.framework-1.0.0-beta.31" />
+		<updated>2020-12-01T22:07:06Z</updated>
+		<content>&lt;ul&gt;
+&lt;li&gt;Added some additional retry policies to file operations to avoid file lock exceptions under certain conditions (#151).&lt;/li&gt;
+&lt;li&gt;Added ability to customize the body of meta-refresh redirect HTML files using the &lt;code&gt;RedirectBody&lt;/code&gt; key (#153).&lt;/li&gt;
+&lt;li&gt;Added &lt;code&gt;.fhtml&lt;/code&gt; as a media type to mean HTML fragments (needed so that we can treat full HTML and HTML fragments differently when applying layouts in Statiq Web).&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+	</entry>
+	<entry>
+		<id>https://statiq.dev/news/2020/12/01/statiq.web-1.0.0-beta.15</id>
+		<title>Statiq.Web Release 1.0.0-beta.15</title>
+		<link href="https://statiq.dev/news/2020/12/01/statiq.web-1.0.0-beta.15" />
+		<updated>2020-12-01T15:16:59Z</updated>
+		<content>&lt;ul&gt;
+&lt;li&gt;Updated Statiq Framework to version &lt;a href="https://github.com/statiqdev/Statiq.Framework/releases/tag/v1.0.0-beta.30"&gt;1.0.0-beta.30&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Breaking change:&lt;/strong&gt; Refactored the exiting bootstrapper process extensions to use the &lt;code&gt;ProcessTiming&lt;/code&gt; enum.&lt;/li&gt;
+&lt;li&gt;Fixed a regression with the preview command and file watching that was execution more than once on file changes.&lt;/li&gt;
+&lt;li&gt;Added a &lt;code&gt;WatchPaths&lt;/code&gt; setting that adds additional folders to watch in preview mode (#930).&lt;/li&gt;
+&lt;li&gt;Added additional bootstrapper extensions to specify whether a process should launch when previewing, when not previewing, or always (#931).&lt;/li&gt;
+&lt;li&gt;Added a flag for &amp;quot;concurrent&amp;quot; processes that run in the background but wait for exit before the next process timing phase (#931).&lt;/li&gt;
+&lt;li&gt;Added a &lt;code&gt;ProcessTiming.Initialization&lt;/code&gt; setting to start a process before all others (#932).&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+	</entry>
+	<entry>
+		<id>https://statiq.dev/news/2020/12/01/statiq.framework-1.0.0-beta.30</id>
+		<title>Statiq.Framework Release 1.0.0-beta.30</title>
+		<link href="https://statiq.dev/news/2020/12/01/statiq.framework-1.0.0-beta.30" />
+		<updated>2020-12-01T15:04:40Z</updated>
+		<content>&lt;ul&gt;
+&lt;li&gt;Added a new &lt;code&gt;CleanMode&lt;/code&gt; enumeration and corresponding setting to control which output files are cleaned on execution (#152).&lt;/li&gt;
+&lt;li&gt;Added a &lt;code&gt;--clean-mode&lt;/code&gt; command-line option to control the cleaning mode.&lt;/li&gt;
+&lt;li&gt;Changed the default cleaning behavior to &lt;code&gt;CleanMode.Self&lt;/code&gt; which only cleans files written during execution and not those written by external processes, for example.&lt;/li&gt;
+&lt;li&gt;Added the &lt;code&gt;IServiceProvider&lt;/code&gt; to the &lt;code&gt;PipelineBuilder&lt;/code&gt; so services are available when building pipelines (#150).&lt;/li&gt;
+&lt;li&gt;Added new &lt;code&gt;IReadOnlyFileSystem.GetRootPath()&lt;/code&gt; extensions.&lt;/li&gt;
+&lt;li&gt;Added &lt;code&gt;ProcessLauncher.WaitForRunningProcesses()&lt;/code&gt; that allows waiting until all running processes have exited.&lt;/li&gt;
+&lt;li&gt;Added a &lt;code&gt;IBootstrapper.Command&lt;/code&gt; property that can get the command that was run (provided it inherits from &lt;code&gt;BaseCommand&amp;lt;TSettings&amp;gt;&lt;/code&gt;).&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+	</entry>
 	<entry>
 		<id>https://statiq.dev/news/2020/11/22/statiq.web-1.0.0-beta.14</id>
 		<title>Statiq.Web Release 1.0.0-beta.14</title>
