@@ -284,7 +284,7 @@
 <h1 id="special-types-of-pipelines">Special Types Of Pipelines</h1>
 <p>In addition to the phases above, there are several special types of pipelines you can define.</p>
 <h2 id="isolated">Isolated</h2>
-<p>An isolated pipeline is one that you know don't need access to output documents from any other pipelines. You can declare a pipeline to be isolated by setting the <code>Isolated</code> flag to <code>true</code>. As isolated pipeline will execute all for phases as quickly as possible in parallel with other pipelines. This kind of pipeline is useful for things like processing Less or Sass files that don't rely on coordination with other pipelines.</p>
+<p>An isolated pipeline is one that you know don't need access to output documents from any other pipelines. You can declare a pipeline to be isolated by setting the <code>Isolated</code> flag to <code>true</code>. As isolated pipeline will execute all four phases as quickly as possible in parallel with other pipelines. This kind of pipeline is useful for things like processing Less or Sass files that don't rely on coordination with other pipelines.</p>
 <h2 id="deployment">Deployment</h2>
 <p>Deployment pipelines are special in that they don't execute by default. To execute your deployment pipelines you run Statiq with the <code>deploy</code> command. Modules in deployment pipelines can read document outputs from other pipelines inside their output phase (unlike a normal pipeline). Deployment pipelines are also executed last so that the output phase of other non-deployment pipelines has completed. In general, deployment pipelines contain modules that deploy final output somewhere (like a web host) inside their output phase.</p>
 <h2 id="execution-policy">Execution Policy</h2>
