@@ -4,7 +4,33 @@
 	<title />
 	<link rel="self" href="https://statiq.dev/" />
 	<rights>2021</rights>
-	<updated>2021-01-15T13:19:53Z</updated>
+	<updated>2021-01-31T21:41:56Z</updated>
+	<entry>
+		<id>https://statiq.dev/news/2021/01/31/statiq.web-1.0.0-beta.19</id>
+		<title>Statiq.Web Release 1.0.0-beta.19</title>
+		<link href="https://statiq.dev/news/2021/01/31/statiq.web-1.0.0-beta.19" />
+		<updated>2021-01-31T21:31:37Z</updated>
+		<content>&lt;ul&gt;
+&lt;li&gt;Updated Statiq Framework to version &lt;a href="https://github.com/statiqdev/Statiq.Framework/releases/tag/v1.0.0-beta.33"&gt;1.0.0-beta.33&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Added ability for sidecar files to append the sidecar file extension in addition to replacing the original file extension.&lt;/li&gt;
+&lt;li&gt;Fixed several bugs in the file watcher for preview mode related to multiple file changes.&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+	</entry>
+	<entry>
+		<id>https://statiq.dev/news/2021/01/31/statiq.framework-1.0.0-beta.33</id>
+		<title>Statiq.Framework Release 1.0.0-beta.33</title>
+		<link href="https://statiq.dev/news/2021/01/31/statiq.framework-1.0.0-beta.33" />
+		<updated>2021-01-31T21:16:30Z</updated>
+		<content>&lt;ul&gt;
+&lt;li&gt;Added ability to &amp;quot;map&amp;quot; input folders to subfolders in the virtual folder hierarchy (so not every input folder has to be at the root now).&lt;/li&gt;
+&lt;li&gt;Added the &lt;code&gt;GenerateJson&lt;/code&gt; module back in (it got dropped a while ago when Statiq.Json was merged with Statiq.Core).&lt;/li&gt;
+&lt;li&gt;Added a utility &lt;code&gt;LoggerFactoryLoggerWrapper&lt;/code&gt; class that can wrap the context (or any other &lt;code&gt;ILogger&lt;/code&gt;) and provide it as an &lt;code&gt;ILoggerFactory&lt;/code&gt; that always logs to the underlying logger.&lt;/li&gt;
+&lt;li&gt;Fixed a bug with the generated doctype element in redirects (#160, #161, thanks &amp;#64;&amp;#64;gep13).&lt;/li&gt;
+&lt;li&gt;Fixed a bug with virtual input directories when getting a parent directory from a file produced by one (it wasn't getting the original virtual directory).&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+	</entry>
 	<entry>
 		<id>https://statiq.dev/news/2021/01/10/statiq.web-1.0.0-beta.18</id>
 		<title>Statiq.Web Release 1.0.0-beta.18</title>

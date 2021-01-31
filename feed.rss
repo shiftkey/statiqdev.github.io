@@ -5,8 +5,36 @@
 		<link>https://statiq.dev/</link>
 		<description />
 		<copyright>2021</copyright>
-		<pubDate>Fri, 15 Jan 2021 13:19:53 GMT</pubDate>
-		<lastBuildDate>Fri, 15 Jan 2021 13:19:53 GMT</lastBuildDate>
+		<pubDate>Sun, 31 Jan 2021 21:41:56 GMT</pubDate>
+		<lastBuildDate>Sun, 31 Jan 2021 21:41:56 GMT</lastBuildDate>
+		<item>
+			<title>Statiq.Web Release 1.0.0-beta.19</title>
+			<link>https://statiq.dev/news/2021/01/31/statiq.web-1.0.0-beta.19</link>
+			<guid>https://statiq.dev/news/2021/01/31/statiq.web-1.0.0-beta.19</guid>
+			<pubDate>Sun, 31 Jan 2021 21:31:37 GMT</pubDate>
+			<content:encoded>&lt;ul&gt;
+&lt;li&gt;Updated Statiq Framework to version &lt;a href="https://github.com/statiqdev/Statiq.Framework/releases/tag/v1.0.0-beta.33"&gt;1.0.0-beta.33&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Added ability for sidecar files to append the sidecar file extension in addition to replacing the original file extension.&lt;/li&gt;
+&lt;li&gt;Fixed several bugs in the file watcher for preview mode related to multiple file changes.&lt;/li&gt;
+&lt;/ul&gt;
+</content:encoded>
+			<comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
+		</item>
+		<item>
+			<title>Statiq.Framework Release 1.0.0-beta.33</title>
+			<link>https://statiq.dev/news/2021/01/31/statiq.framework-1.0.0-beta.33</link>
+			<guid>https://statiq.dev/news/2021/01/31/statiq.framework-1.0.0-beta.33</guid>
+			<pubDate>Sun, 31 Jan 2021 21:16:30 GMT</pubDate>
+			<content:encoded>&lt;ul&gt;
+&lt;li&gt;Added ability to &amp;quot;map&amp;quot; input folders to subfolders in the virtual folder hierarchy (so not every input folder has to be at the root now).&lt;/li&gt;
+&lt;li&gt;Added the &lt;code&gt;GenerateJson&lt;/code&gt; module back in (it got dropped a while ago when Statiq.Json was merged with Statiq.Core).&lt;/li&gt;
+&lt;li&gt;Added a utility &lt;code&gt;LoggerFactoryLoggerWrapper&lt;/code&gt; class that can wrap the context (or any other &lt;code&gt;ILogger&lt;/code&gt;) and provide it as an &lt;code&gt;ILoggerFactory&lt;/code&gt; that always logs to the underlying logger.&lt;/li&gt;
+&lt;li&gt;Fixed a bug with the generated doctype element in redirects (#160, #161, thanks &amp;#64;&amp;#64;gep13).&lt;/li&gt;
+&lt;li&gt;Fixed a bug with virtual input directories when getting a parent directory from a file produced by one (it wasn't getting the original virtual directory).&lt;/li&gt;
+&lt;/ul&gt;
+</content:encoded>
+			<comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
+		</item>
 		<item>
 			<title>Statiq.Web Release 1.0.0-beta.18</title>
 			<link>https://statiq.dev/news/2021/01/10/statiq.web-1.0.0-beta.18</link>

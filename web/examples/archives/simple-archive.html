@@ -1,0 +1,360 @@
+<!DOCTYPE html><html><head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicons/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicons/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicons/favicon-16x16.png">
+        <link rel="manifest" href="/assets/favicons/site.webmanifest">
+        <link rel="shortcut icon" type="image/png" href="/assets/favicons/favicon.ico">
+        <link rel="mask-icon" href="/assets/favicons/safari-pinned-tab.svg" color="#e9ecef">
+        <meta name="msapplication-config" content="/assets/favicons/browserconfig.xml">
+        <meta name="msapplication-TileColor" content="#e9ecef">
+        <meta name="theme-color" content="#e9ecef">
+
+        <link href="/assets/bootstrap/bootstrap.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&amp;family=Roboto+Slab:wght@400;700&amp;family=Roboto:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&amp;display=swap" rel="stylesheet" data-no-mirror="">
+        <link rel="stylesheet" href="/mirror/cdn.jsdelivr.net/npm/prismjs@1.19.0/themes/prism.css">
+        <link href="/assets/css/styles.css" rel="stylesheet">
+
+        <script src="/mirror/code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+        <script src="/mirror/cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+        <script src="/mirror/stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+        <script src="https://kit.fontawesome.com/a1cad7ed9a.js" crossorigin="anonymous" data-no-mirror=""></script>
+        <script src="/mirror/cdn.jsdelivr.net/npm/mermaid@8.4.8/dist/mermaid.min.js"></script>
+        <script src="/mirror/cdn.jsdelivr.net/npm/svg-pan-zoom@3.6.1/dist/svg-pan-zoom.min.js"></script>
+        <script src="/mirror/cdn.jsdelivr.net/npm/prismjs@1.19.0/components/prism-core.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/prismjs@1.19.0/plugins/autoloader/prism-autoloader.min.js" data-no-mirror=""></script>
+        <script src="/mirror/cdn.jsdelivr.net/npm/quicklink@2.0.0/dist/quicklink.umd.js"></script>
+        
+		
+
+        <title>Statiq - Simple Archive</title>
+    </head>
+    <body class="d-flex flex-column">
+        <div class="flex-grow-1 d-flex flex-column">
+            <div class="bg-nav">
+                <div class="container-xl py-3">
+                    <div class="row">
+                        <div class="offset-lg-2 col-12 col-lg-8 px-0">
+                            <nav class="navbar navbar-expand-md navbar-light align-items-start">
+                                <a class="navbar-brand" href="/"><img id="logo" src="/assets/statiq.svg" alt="Statiq Framework"></a>
+                                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapse-topnav" aria-controls="collapse-topnav" aria-expanded="false" aria-label="Toggle navigation">
+                                    <span class="navbar-toggler-icon"></span>
+                                </button>
+                                <div id="collapse-topnav" class="collapse navbar-collapse flex-wrap">
+                                    <ul class="navbar-nav mr-auto">
+                                        <li id="nav-web" class="nav-item">
+                                            <a class="nav-link text-blue font-weight-light font-size-lg" href="/web">Web</a>
+                                        </li>
+                                        <li class="nav-item mx-3 border-right d-none d-md-block"></li>
+                                        <li id="nav-docs" class="nav-item">
+                                            <a class="nav-link text-orange font-weight-light font-size-lg" href="/docs">Docs</a>
+                                        </li>
+                                        <li class="nav-item mx-3 border-right d-none d-md-block"></li>
+                                        <li id="nav-framework" class="nav-item">
+                                            <a class="nav-link text-purple font-weight-light font-size-lg" href="/framework">Framework</a>
+                                        </li>
+                                    </ul>
+                                    <ul class="navbar-nav">
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="/news">News</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="https://github.com/statiqdev"><i class="fab fa-github"></i> GitHub</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="https://twitter.com/statiqdev"><i class="fab fa-twitter"></i> Twitter</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="https://github.com/statiqdev/Discussions/discussions"><i class="fad fa-question-circle"></i> Get Help</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link font-weight-bold text-red" href="/support"><i class="fad fa-heart icon-red"></i> Support</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="flex-grow-1 d-flex flex-column section-undefined section-web">
+                    <div id="titlebar" class="py-4">
+                        <div class="container-xl">
+                            <div class="row">
+                                <div class="offset-md-3 offset-lg-2 offset-lg-2 col-12 col-lg-8 px-3 px-lg-0 w-100 d-flex align-items-end">
+                                    <div class="flex-grow-1">
+                                        <div class="breadcrumbs text-uppercase d-flex flex-column flex-md-row">
+                                                <span><a href="/web">Web</a></span>
+                                                <span><a href="/web/examples">Examples</a></span>
+                                        </div>
+                                        <div class="text-white m-0 title">
+                                            Simple Archive                                            
+                                        </div>
+                                    </div>
+                                        <div class="navbar navbar-expand-md navbar-dark p-0">
+                                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapse-sidebar" aria-controls="collapse-sidebar" aria-expanded="false" aria-label="Toggle navigation">
+                                                <span class="navbar-toggler-icon"></span>
+                                            </button>
+                                        </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="undertitle">
+                        <div class="container-xl">                            
+                            <div class="row">
+                                    <div class="col-md-3 col-lg-2 bg-section">
+                                    </div>
+                                    <div class="col-md-9 col-lg-8 bg-white">
+                                    </div>
+                                <div class="col-lg-2 d-none d-lg-block bg-section">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                <div class="flex-grow-1 d-flex flex-column">
+                        <div class="container-xl flex-grow-1 d-flex flex-column">
+                            <div class="row flex-grow-1 align-items-stretch">
+                                        <div class="col-md-3 col-lg-2 bg-body">
+                                            <div id="collapse-sidebar" class="sidebar collapse px-0 px-md-3 pt-3">
+                                                    <div class="sidebar-nav-item">
+                                                        <a href="/web">About Statiq Web</a>
+                                                    </div>
+                                                        <div class="sidebar-nav-item has-children">
+                                                            <a href="/web/configuration">Configuration</a>
+                                                        </div>
+                                                            <div class="sidebar-nav-children">
+                                                                    <div class="sidebar-nav-item">
+                                                                        <a href="/web/configuration/settings">Settings</a>
+                                                                    </div>
+                                                            </div>
+                                                        <div class="sidebar-nav-item has-children">
+                                                            <a href="/web/content-and-data">Content And Data</a>
+                                                        </div>
+                                                            <div class="sidebar-nav-children">
+                                                                    <div class="sidebar-nav-item">
+                                                                        <a href="/web/content-and-data/assets">Assets</a>
+                                                                    </div>
+                                                                    <div class="sidebar-nav-item has-children">
+                                                                        <a href="/web/content-and-data/content">Content</a>
+                                                                    </div>
+                                                                        <div class="sidebar-nav-children">
+                                                                                <div class="sidebar-nav-item">
+                                                                                    <a href="/web/content-and-data/content/excerpts-and-headings">Excerpts And Headings</a>
+                                                                                </div>
+                                                                                <div class="sidebar-nav-item">
+                                                                                    <a href="/web/content-and-data/content/links-and-cross-references">Links And Cross References</a>
+                                                                                </div>
+                                                                                <div class="sidebar-nav-item">
+                                                                                    <a href="/web/content-and-data/content/redirects">Redirects</a>
+                                                                                </div>
+                                                                                <div class="sidebar-nav-item">
+                                                                                    <a href="/web/content-and-data/content/resource-mirroring">Resource Mirroring</a>
+                                                                                </div>
+                                                                                <div class="sidebar-nav-item">
+                                                                                    <a href="/web/content-and-data/content/shortcodes">Shortcodes</a>
+                                                                                </div>
+                                                                        </div>
+                                                                    <div class="sidebar-nav-item">
+                                                                        <a href="/web/content-and-data/data">Data</a>
+                                                                    </div>
+                                                                    <div class="sidebar-nav-item has-children">
+                                                                        <a href="/web/content-and-data/metadata">Metadata</a>
+                                                                    </div>
+                                                                        <div class="sidebar-nav-children">
+                                                                                <div class="sidebar-nav-item">
+                                                                                    <a href="/web/content-and-data/metadata/directory-metadata">Directory Metadata</a>
+                                                                                </div>
+                                                                                <div class="sidebar-nav-item">
+                                                                                    <a href="/web/content-and-data/metadata/sidecar-files">Sidecar Files</a>
+                                                                                </div>
+                                                                                <div class="sidebar-nav-item">
+                                                                                    <a href="/web/content-and-data/metadata/front-matter">Front Matter</a>
+                                                                                </div>
+                                                                        </div>
+                                                                    <div class="sidebar-nav-item">
+                                                                        <a href="/web/content-and-data/scripts">Scripts</a>
+                                                                    </div>
+                                                                    <div class="sidebar-nav-item">
+                                                                        <a href="/web/content-and-data/document-hierarchy">Document Hierarchy</a>
+                                                                    </div>
+                                                                    <div class="sidebar-nav-item">
+                                                                        <a href="/web/content-and-data/enumerating-values">Enumerating Values</a>
+                                                                    </div>
+                                                                    <div class="sidebar-nav-item">
+                                                                        <a href="/web/content-and-data/archives">Archives</a>
+                                                                    </div>
+                                                                    <div class="sidebar-nav-item">
+                                                                        <a href="/web/content-and-data/feeds">Feeds</a>
+                                                                    </div>
+                                                                    <div class="sidebar-nav-item">
+                                                                        <a href="/web/content-and-data/excluding-documents">Excluding Documents</a>
+                                                                    </div>
+                                                                    <div class="sidebar-nav-item has-children">
+                                                                        <a href="/web/content-and-data/templates">Templates</a>
+                                                                    </div>
+                                                                        <div class="sidebar-nav-children">
+                                                                                <div class="sidebar-nav-item">
+                                                                                    <a href="/web/content-and-data/templates/razor">Razor</a>
+                                                                                </div>
+                                                                        </div>
+                                                            </div>
+                                                        <div class="sidebar-nav-item">
+                                                            <a href="/web/themes">Themes</a>
+                                                        </div>
+                                                        <div class="sidebar-nav-item has-children">
+                                                            <a href="/web/deployment">Deployment</a>
+                                                        </div>
+                                                            <div class="sidebar-nav-children">
+                                                                    <div class="sidebar-nav-item">
+                                                                        <a href="/web/deployment/azure-app-service">Azure App Service</a>
+                                                                    </div>
+                                                                    <div class="sidebar-nav-item">
+                                                                        <a href="/web/deployment/github-pages">Github Pages</a>
+                                                                    </div>
+                                                                    <div class="sidebar-nav-item">
+                                                                        <a href="/web/deployment/netlify">Netlify</a>
+                                                                    </div>
+                                                            </div>
+                                                        <div class="sidebar-nav-item has-children">
+                                                            <a href="/web/running">Running Your Application</a>
+                                                        </div>
+                                                            <div class="sidebar-nav-children">
+                                                                    <div class="sidebar-nav-item">
+                                                                        <a href="/web/running/command-line">Command-Line Interface</a>
+                                                                    </div>
+                                                                    <div class="sidebar-nav-item">
+                                                                        <a href="/web/running/preview-server">Preview Server</a>
+                                                                    </div>
+                                                            </div>
+                                                        <div class="sidebar-nav-item">
+                                                            <a href="/web/porting-from-wyam">Porting From Wyam</a>
+                                                        </div>
+                                                        <div class="sidebar-nav-item has-children">
+                                                            <a href="/web/examples">Examples</a>
+                                                        </div>
+                                                            <div class="sidebar-nav-children">
+                                                                    <div class="sidebar-nav-item">
+                                                                        <a href="/web/examples/archives">Archives Examples</a>
+                                                                    </div>
+                                                            </div>
+                                            </div>
+                                        </div>
+                                        <div id="content" class="col-md-9 col-lg-8 p-4 pt-md-0 bg-white">
+                                            
+<h3>Original File <small><code>simple-archive.cshtml</code></small></h3>
+
+<pre class="language-txt"><code>ArchiveSources: posts/*
+---
+&lt;p&gt;This is a simple archive that lists all the documents from the &lt;code&gt;posts&lt;/code&gt; folder on a single page without any sorting.&lt;/p&gt;
+
+@foreach (IDocument document in Model.GetChildren())
+{
+    &lt;h5&gt;@Html.DocumentLink(document)&lt;/h5&gt;
+    @Html.Raw(document.GetString(Statiq.Html.HtmlKeys.Excerpt))
+}
+</code></pre>
+
+<hr>
+
+<p>This is a simple archive that lists all the documents from the <code>posts</code> folder on a single page without any sorting.</p>
+
+    <h5><a href="/web/examples/posts/tomato">Tomato</a></h5>
+<p>The tomato is the edible berry of the plant Solanum lycopersicum,[1][2] commonly known as a tomato plant. The species originated in western South America and Central America.[2][3] The Nahuatl (the language used by the Aztecs) word tomatl gave rise to the Spanish word tomate, from which the English word tomato derived.[3][4] Its domestication and use as a cultivated food may have originated with the indigenous peoples of Mexico.[2][5] The Aztecs used tomatoes in their cooking at the time of the Spanish conquest of the Aztec Empire, and after the Spanish encountered the tomato for the first time after their contact with the Aztecs, they brought the plant to Europe. From there, the tomato was introduced to other parts of the European-colonized world during the 16th century.[2]</p>    <h5><a href="/web/examples/posts/strawberry">Strawberry</a></h5>
+<p>The garden strawberry (or simply strawberry; Fragaria × ananassa)[1] is a widely grown hybrid species of the genus Fragaria, collectively known as the strawberries, which are cultivated worldwide for their fruit. The fruit is widely appreciated for its characteristic aroma, bright red color, juicy texture, and sweetness. It is consumed in large quantities, either fresh or in such prepared foods as jam, juice, pies, ice cream, milkshakes, and chocolates. Artificial strawberry flavorings and aromas are also widely used in products such as candy, soap, lip gloss, perfume, and many others.</p>    <h5><a href="/web/examples/posts/pepper">Pepper</a></h5>
+<p>The bell pepper (also known as sweet pepper, pepper or capsicum /ˈkæpsɪkəm/)[1] is the fruit of plants in the Grossum cultivar group of the species Capsicum annuum.[2][3] Cultivars of the plant produce fruits in different colours, including red, yellow, orange, green, white, and purple. Bell peppers are sometimes grouped with less pungent pepper varieties as "sweet peppers". While they are fruits—botanically classified as berries—they are commonly used as a vegetable ingredient or side dish.</p>    <h5><a href="/web/examples/posts/pear">Pear</a></h5>
+<p>Pears are fruits produced and consumed around the world, growing on a tree and harvested in late Summer into October. The pear tree and shrub are a species of genus Pyrus /ˈpaɪrəs/, in the family Rosaceae, bearing the pomaceous fruit of the same name. Several species of pears are valued for their edible fruit and juices, while others are cultivated as trees.</p>    <h5><a href="/web/examples/posts/orange">Orange</a></h5>
+<p>The orange is the fruit of various citrus species in the family Rutaceae (see list of plants known as orange); it primarily refers to Citrus × sinensis,[1] which is also called sweet orange, to distinguish it from the related Citrus × aurantium, referred to as bitter orange. The sweet orange reproduces asexually (apomixis through nucellar embryony); varieties of sweet orange arise through mutations.[2][3][4][5]</p>    <h5><a href="/web/examples/posts/onion">Onion</a></h5>
+<p>The onion (Allium cepa L., from Latin cepa "onion"), also known as the bulb onion or common onion, is a vegetable that is the most widely cultivated species of the genus Allium. Its close relatives include the garlic, scallion, shallot, leek, chive,[2] and Chinese onion.[3]</p>    <h5><a href="/web/examples/posts/mango">Mango</a></h5>
+<p>A mango is a stone fruit produced from numerous species of tropical trees belonging to the flowering plant genus Mangifera, cultivated mostly for their edible fruit. Most of these species are found in nature as wild mangoes. The genus belongs to the cashew family Anacardiaceae. Mangoes are native to South Asia,[1][2] from where the "common mango" or "Indian mango", Mangifera indica, has been distributed worldwide to become one of the most widely cultivated fruits in the tropics. Other Mangifera species (e.g. horse mango, Mangifera foetida) are grown on a more localized basis.</p>    <h5><a href="/web/examples/posts/cherry">Cherry</a></h5>
+<p>A cherry is the fruit of many plants of the genus Prunus, and is a fleshy drupe (stone fruit).</p>    <h5><a href="/web/examples/posts/blueberry">Blueberry</a></h5>
+<p>Blueberries are perennial flowering plants with blue or purple berries. They are classified in the section Cyanococcus within the genus Vaccinium. Vaccinium also includes cranberries, bilberries, huckleberries and Madeira blueberries.[1] Commercial blueberries—both wild (lowbush) and cultivated (highbush)—are all native to North America. The highbush varieties were introduced into Europe during the 1930s.[2]</p>    <h5><a href="/web/examples/posts/banana">Banana</a></h5>
+<p>A banana is an elongated, edible fruit – botanically a berry[1][2] – produced by several kinds of large herbaceous flowering plants in the genus Musa.[3] In some countries, bananas used for cooking may be called "plantains", distinguishing them from dessert bananas. The fruit is variable in size, color, and firmness, but is usually elongated and curved, with soft flesh rich in starch covered with a rind, which may be green, yellow, red, purple, or brown when ripe. The fruits grow in clusters hanging from the top of the plant. Almost all modern edible seedless (parthenocarp) bananas come from two wild species – Musa acuminata and Musa balbisiana. The scientific names of most cultivated bananas are Musa acuminata, Musa balbisiana, and Musa × paradisiaca for the hybrid Musa acuminata × M. balbisiana, depending on their genomic constitution. The old scientific name for this hybrid, Musa sapientum, is no longer used.</p>    <h5><a href="/web/examples/posts/avocado">Avocado</a></h5>
+<p>The avocado (Persea americana), a tree likely originating from south central Mexico,[2][3][4] is classified as a member of the flowering plant family Lauraceae.[2] The fruit of the plant, also called an avocado (or avocado pear or alligator pear), is botanically a large berry containing a single large seed.[5]</p>    <h5><a href="/web/examples/posts/apple">Apple</a></h5>
+<p>An apple is an edible fruit produced by an apple tree (Malus domestica). Apple trees are cultivated worldwide and are the most widely grown species in the genus Malus. The tree originated in Central Asia, where its wild ancestor, Malus sieversii, is still found today. Apples have been grown for thousands of years in Asia and Europe and were brought to North America by European colonists. Apples have religious and mythological significance in many cultures, including Norse, Greek, and European Christian tradition.</p>
+
+
+                                        </div>
+                                <div class="col-lg-2 d-none d-lg-block bg-body pl-3 pt-3">
+                                        <p class="small font-weight-bold"><a href="https://github.com/statiqdev/statiqdev.github.io/edit/develop/input/web/examples/archives/simple-archive.cshtml"><i class="fad fa-pencil"></i> Edit This Page</a></p>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+            </div>
+        </div>
+        <div id="footer" class="p-3 text-white">
+            <div class="container-xl">
+                <div class="row">
+                    <div class="offset-lg-2 col-12 col-lg-8">
+                        <div class="text-light text-center">
+                            <a href="/web" class="text-light pr-2 mr-1 border-right">Web</a>
+                            <a href="/docs" class="text-light pr-2 mr-1 border-right">Docs</a>
+                            <a href="/framework" class="text-light">Framework</a>
+                        </div>
+                        <div class="text-light text-center font-size-sm">
+                            <a href="/news" class="text-light pr-2 mr-1">News</a>
+                            <a href="https://github.com/statiqdev" class="text-light pr-2 mr-1"><i class="fab fa-github"></i> GitHub</a>
+                            <a href="https://twitter.com/statiqdev" class="text-light pr-2 mr-1"><i class="fab fa-twitter"></i> Twitter</a>
+                            <a class="text-light font-weight-bold" href="/support"><i class="fad fa-heart"></i> Support</a>
+                        </div>
+                        <div class="pt-2 font-size-sm text-muted text-center">
+                            © 2021 Statiq/Dave Glick
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script>
+            $(document).ready(function() {
+                quicklink.listen();
+                
+                mermaid.initialize(
+                {
+                    flowchart:
+                    {
+                        useMaxWidth: false
+                    },
+					startOnLoad: false,
+					cloneCssStyles: false
+                });     
+                mermaid.init(undefined, ".mermaid");
+
+                // Remove the max-width setting that Mermaid sets
+                var mermaidSvg = $('.mermaid svg');
+                mermaidSvg.addClass('img-fluid');
+                mermaidSvg.css('max-width', '');
+
+                // Make it scrollable
+				var target = document.querySelector(".mermaid svg");
+				if(target !== null)
+				{
+					var panZoom = window.panZoom = svgPanZoom(target, {
+						zoomEnabled: true,
+						controlIconsEnabled: true,
+						fit: true,
+						center: true,
+                        maxZoom: 20,
+                        zoomScaleSensitivity: 0.6
+					});			                          
+
+                    // Do the reset once right away to fit the diagram
+                    panZoom.resize();
+                    panZoom.fit();
+                    panZoom.center();
+                    
+                    $(window).resize(function(){
+                        panZoom.resize();
+                        panZoom.fit();
+                        panZoom.center();
+                    });
+				}
+            });
+        </script>
+        
+		
+    
+</body></html>
